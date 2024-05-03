@@ -31,8 +31,11 @@ void	ft_print_comb2(void)
             ft_print2(i);
             ft_putchar(' ');
             ft_print2(j);
-            ft_putchar(',');
-            ft_putchar(' ');
+            if (i < 98) {
+              ft_putchar(',');
+              ft_putchar(' ');
+            }
+
             j++;
         }
     i++;
