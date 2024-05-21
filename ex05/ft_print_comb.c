@@ -1,20 +1,12 @@
 #include <unistd.h>
 
-void	ft_putchar(char c)
-{
-	write (1, &c, 1);
-}
-
 void	ft_print(int i, int j, int k)
 {
-	ft_putchar(i);
-	ft_putchar(j);
-	ft_putchar(k);
+	write(1, &i, 1);
+	write(1, &j, 1);
+	write(1, &k, 1);
 	if(i < '7')
-	{
-    	ft_putchar(',');
-    	ft_putchar(' ');
-	}
+    	write(1, ", ", 2);
 }
 
 void	ft_print_comb(void)
