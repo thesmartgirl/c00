@@ -35,7 +35,6 @@ void	ft_print_comb2(void)
               ft_putchar(',');
               ft_putchar(' ');
             }
-
             j++;
         }
     i++;
